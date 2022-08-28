@@ -220,8 +220,8 @@ if (!user) continue
 let afkTime = user.afkTime
 if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
-reply(`Jangan tag dia!
-Dia sedang AFK ${reason ? '\nReason : ' + reason : 'Reason : Nothing'}
+reply(`Jangan tag Syahri!
+Dia sedang Sibuk ${reason ? '\nReason : ' + reason : 'Reason : Nothing'}
 Waktu : ${clockString(new Date - afkTime)}
 `.trim())
 }
